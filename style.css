@@ -1,0 +1,171 @@
+body{
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 2px;
+  padding-left: 2px;
+  padding-bottom: 2px;
+  display: flex;
+}
+
+li {
+  flex: 1;
+  text-align: center;
+  padding: 3px;
+  background: white;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav a{
+  text-decoration: none;
+  font-size: 1;
+  font-family: 'Courier New', monospace;
+}
+
+li a:hover:not(.active){
+  padding-bottom: 3px;
+  padding-top: 3px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #DBAFC1;
+}
+
+.active{
+  text-decoration: underline;
+  color: #C78283;
+}
+
+.main{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  margin-right: 5vw;
+  width: auto;
+}
+.left{
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid gray;
+}
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 40px;
+}
+.image{
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+}
+.caption{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  line-height: 1;
+}
+.right{
+  display: block;
+  flex-direction: row;
+  margin: 10px 10px 10px 20px;
+}
+.content{
+  display: flex;
+  display: block;
+  font-family: 'Courier New', monospace;
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 10vw;
+}
+.contentskills{
+  display: flex;
+  display: block;
+  font-family: 'Courier New', monospace;
+  padding-top: 100px;
+  padding-left: 50px;
+  width: 30vw;
+  margin-right: 10vw;
+  padding-right: 10vw;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td{
+  position: relative;
+  border:none;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: #ccc;
+  text-align: center;
+  font-size: small;
+}
+  
+  @media only screen and (max-width: 800px) {
+    nav {
+      display: flex;
+      width: 100%;
+      justify-content: center
+    }
+  
+    .main{
+      display: flex;
+      flex-direction: column;
+      min-height: 170vh
+    }
+    .left{
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid gray
+    }
+    .image{
+      display: flex;
+      flex-direction: column;
+      padding-right: 20px;
+      align-items: center;
+    }
+    .caption{
+      display: block;
+      flex-direction: column;
+      width: 30vw;
+    }
+    .right{
+      display: flex;
+      flex-direction: column;
+    }
+    .content{
+      display: flex;
+      display: block;
+      font-family: 'Courier New', monospace;
+      padding-top: 100px;
+      padding-left: 50px;
+      width: 50vw;
+      margin-right: 10vw;
+      padding-right: 10vw;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td{
+      position: relative;
+      border:none;
+    }
+  }
